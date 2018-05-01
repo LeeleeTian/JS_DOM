@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign-in</title>
+</head>
+<script type="text/javascript">
+  function checkInput(){
+    let name = document.getElementById('username');
+    let password = document.getElementById('password');
+    if(name.value != '123' || password.value != '123'){
+      alert("Invalid credentials!\nPlease input again.");
+      if(name.value != '123') {
+        name.value = null;
+      }
+      if(password.value != '123') {
+        password.value = null;
+      }
+    }
+  }
+</script>
+<body>
+  <p>Username <input type="text" id="username"></p>
+  <p>Password <input type="text" id="password"></p>
+  <button type="button" onclick= "checkInput()">Log in</button>
+</body>
+</html>
